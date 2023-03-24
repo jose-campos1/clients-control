@@ -1,0 +1,7 @@
+<section>
+    <h1>Control de Clientes</h1>
+<tr *ngFor="let cliente of clients; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{cliente.name}} {{cliente.surname}}</td>
+</tr>
+</section>

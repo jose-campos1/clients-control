@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "client-control-project": {
+      "hosting": {
+        "clients-control": [
+          "client-control-project"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "client-control-project"
+  }
+}
