@@ -7,15 +7,35 @@ import { LoginComponent } from './componentes/login/login.component';
 import { NoEncontradoComponent } from './componentes/no-encontrado/no-encontrado.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { TableroComponent } from './componentes/tablero/tablero.component';
+import { GuardianComponent } from './guardian/guardian.component';
 
 const routes: Routes = [
-  {path: '', component: TableroComponent},
+  {path: '', component: TableroComponent, canActivate:[GuardianComponent]},
+  {path: 'login', component: LoginComponent},
+  {path: 'registrarse', component: RegisterComponent},
+  {path: 'configuracion', component: ConfiguracionComponent , canActivate:[GuardianComponent]},
+  {path: 'cliente/editar/:id', component: EditarClientesComponent, },
+  {path: '**', component: NoEncontradoComponent}
+];
+
+/**
+ * const routes: Routes = [
+  {path: '', component: TableroComponent, canActivate:[GuardianComponent]},
+  {path: 'login', component: LoginComponent},
+  {path: 'registrarse', component: RegisterComponent},
+  {path: 'configuracion', component: ConfiguracionComponent , canActivate:[GuardianComponent]},
+  {path: 'cliente/editar/:id', component: EditarClientesComponent, },
+  {path: '**', component: NoEncontradoComponent}
+
+   {path: '', component: TableroComponent},
   {path: 'login', component: LoginComponent},
   {path: 'registrarse', component: RegisterComponent},
   {path: 'configuracion', component: ConfiguracionComponent},
-  {path: 'cliente/editar/:id', component: EditarClientesComponent},
+  {path: 'cliente/editar/:id', component: EditarClientesComponent, },
   {path: '**', component: NoEncontradoComponent}
+
 ];
+ */
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

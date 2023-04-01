@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment'; 
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
-
+import { AngularFireAuthModule , SETTINGS} from '@angular/fire/compat/auth';
+import { AngularFireModule } from '@angular/fire/compat/';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,11 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
 import { from } from 'rxjs';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { ClienteService } from './servicios/cliente.service';
+import { FlashMessagesModule } from 'node_modules/flash-messages-angular'
+import { LoginService } from './servicios/login.service';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { GuardianComponent } from './guardian/guardian.component';
+import { ConfigServices } from './servicios/configuration-services';
 
 @NgModule({
   declarations: [
@@ -31,16 +37,25 @@ import { ClienteService } from './servicios/cliente.service';
     RegisterComponent,
     ConfiguracionComponent,
     NoEncontradoComponent,
-    PiePaginaComponent
+    PiePaginaComponent,
+    GuardianComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    FormsModule
+    FormsModule,
+     FlashMessagesModule.forRoot(),
+     AngularFireAuthModule
   ],
-  providers: [ClienteService],
+  providers: [ClienteService,
+     LoginService , 
+     GuardianComponent , 
+     { provide: SETTINGS, useValue:{}},
+      ConfigServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 export const environment = {
   firebase: {
@@ -32,3 +33,5 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+
