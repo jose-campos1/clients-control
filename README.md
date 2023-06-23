@@ -3,7 +3,7 @@
 
 <h2>Clients-Control APP<h2>
 
-This app i'ts made in angular V16..
+<p align="center"> This app i'ts made in angular V16..
 
 the most challenging isue was to work with different library versions because there are "bugs" in newer versions, that do not work properly with other newer versions of [Google database](https://console.firebase.google.com/u/0/project/client-control-project/firestore/data/~2Fclients~2F1j96OtWKUgPXe77z9oUs)
 
@@ -11,7 +11,7 @@ In this case firestore database, it's a relational db that stores diferent infor
 
 Some interesting functions that i want to mention here it's to change directly the configurations of the firestore database from inside the app [config](https://github.com/jose-campos1/clients-control/blob/master/src/app/servicios/configuration-services.ts).. it's value it's that it's absolutely deloped by me :) 
 
-In this case there are secret tokens inside the merge and the deploy of the app, i will be leaving documentation in the bottom please dont hesitate to ask to perform some modifications..
+In this case there are secret tokens inside the merge and the deploy of the app, i will be leaving documentation in the bottom please dont hesitate to ask to perform some modifications.. </p>
 
 <h3>documentation<h3>
 
