@@ -1,19 +1,19 @@
 
 ![m (1)](https://github.com/jose-campos1/clients-control/assets/106594685/522cd4af-f573-4371-a35c-8b1a2f6fa8fe)
 
-##Clients-Control APP
+<h2>Clients-Control APP<h2>
 
 This app i'ts made in angular V16..
 
 the most challenging isue was to work with different library versions because there are "bugs" in newer versions, that do not work properly with other newer versions of [Google database](https://console.firebase.google.com/u/0/project/client-control-project/firestore/data/~2Fclients~2F1j96OtWKUgPXe77z9oUs)
 
-In this case firestore database, it's a relational db that stores diferent information of the client depending on the demand that the user wish to save there. Still it's challenging and the value of this project is by one way that it's fully made on Angular and most of the projects are made on react around the social media [Video](https://www.youtube.com/watch?v=qWy9ylc3f9U&t=312s) and in older versions...
+In this case firestore database, it's a relational db that stores diferent information of the client depending on the demand that the user wish to save there. Still it's challenging and the value of this project is by one way that it's fully made on Angular and most of the projects are made on react around the social media [Video react 4 years ago](https://www.youtube.com/watch?v=qWy9ylc3f9U&t=312s) and in older versions...
 
-Some interesting functions that i want to mention here it's to change directly the configurations of the firestore database from inside the app[config](https://github.com/jose-campos1/clients-control/blob/master/src/app/servicios/configuration-services.ts).. it's value it's that it's absolutely deloped by me :) 
+Some interesting functions that i want to mention here it's to change directly the configurations of the firestore database from inside the app [config](https://github.com/jose-campos1/clients-control/blob/master/src/app/servicios/configuration-services.ts).. it's value it's that it's absolutely deloped by me :) 
 
 In this case there are secret tokens inside the merge and the deploy of the app, i will be leaving documentation in the bottom please dont hesitate to ask to perform some modifications..
 
-##documentation
+<h3>documentation<h3>
 
 [Firestore Actions](https://github.com/marketplace/actions/github-action-for-firebase)
 <br>
