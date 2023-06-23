@@ -1,27 +1,33 @@
-# ClientsControl
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+![m (1)](https://github.com/jose-campos1/clients-control/assets/106594685/522cd4af-f573-4371-a35c-8b1a2f6fa8fe)
 
-## Development server
+##Clients-Control APP
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This app i'ts made in angular V16..
 
-## Code scaffolding
+the most challenging isue was to work with different library versions because there are "bugs" in newer versions, that do not work properly with other newer versions of [Google database](https://console.firebase.google.com/u/0/project/client-control-project/firestore/data/~2Fclients~2F1j96OtWKUgPXe77z9oUs)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+In this case firestore database, it's a relational db that stores diferent information of the client depending on the demand that the user wish to save there. Still it's challenging and the value of this project is by one way that it's fully made on Angular and most of the projects are made on react around the social media [Video](https://www.youtube.com/watch?v=qWy9ylc3f9U&t=312s) and in older versions...
 
-## Build
+Some interesting functions that i want to mention here it's to change directly the configurations of the firestore database from inside the app[config](https://github.com/jose-campos1/clients-control/blob/master/src/app/servicios/configuration-services.ts).. it's value it's that it's absolutely deloped by me :) 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+In this case there are secret tokens inside the merge and the deploy of the app, i will be leaving documentation in the bottom please dont hesitate to ask to perform some modifications..
 
-## Running unit tests
+##documentation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[Firestore Actions](https://github.com/marketplace/actions/github-action-for-firebase)
+<br>
+[Tokens Tutorial](https://www.youtube.com/watch?v=ohslXhhNdOM&list=PL8MdgUsZFQ9g1oGGLR4XohXqS1RYJ2ZXR&index=23)
+<br>
+[Important information](https://www.youtube.com/watch?v=CWjcjnYNAw4&list=PL8MdgUsZFQ9g1oGGLR4XohXqS1RYJ2ZXR&index=27)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Badges
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
