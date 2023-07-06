@@ -22,7 +22,7 @@ the most challenging isue was to work with different library versions because th
 
 ## Firestore
 
-In this case firestore database, it's a relational db that stores diferent information of the client depending on the demand that the user wish to save there. Still it's challenging and the value of this project is by one way that it's fully made on Angular and most of the projects are made on react around the social media [Video react 4 years ago](https://www.youtube.com/watch?v=qWy9ylc3f9U&t=312s) and in older versions...
+In this case firestore database, it's a non relational db that stores diferent information of the client depending on the demand that the user wish to save there. Still it's challenging and the value of this project is by one way that it's fully made on Angular and most of the projects are made on react around the social media [Video react 4 years ago](https://www.youtube.com/watch?v=qWy9ylc3f9U&t=312s) and in older versions...
 
 ## Functions
 
